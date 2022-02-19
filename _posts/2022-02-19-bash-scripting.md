@@ -15,6 +15,56 @@ pin: false
 
 ### Specific Languages
 
+### Today's Assignment:
+	Single BASH script for Webserver launch in CENTOS and UBUNTU
+
+```bash
+#!/bin/bash
+
+sudo apt --help
+
+if [ $? -eq 0 ]
+then
+
+
+echo "########    UBUNTU MACHINE       #######"
+
+sudo apt update -y
+sudo apt install apache2 wget unzip -y
+sudo systemctl start apache2
+sudo systemctl enable apache2
+mkdir -p /tmp/webfile
+cd /tmp/webfile
+wget https://templatemo.com/tm-zip-files-2020/templatemo_520_highway.zip
+rm -rf templatemo_520_highway.zip.*
+unzip -o templatemo_520_highway.zip
+cp -r templatemo_520_highway/* /var/www/html/
+sudo systemctl restart apache2
+
+
+else
+
+echo "########    CENTOS MACHINE       #######"
+
+sudo yum update -y
+sudo yum install httpd wget unzip -y
+sudo systemctl start httpd
+sudo systemctl enable httpd
+mkdir -p /tmp/webfile
+cd /tmp/webfile
+wget https://templatemo.com/tm-zip-files-2020/templatemo_520_highway.zip
+rm -rf templatemo_520_highway.zip.*
+unzip -o templatemo_520_highway.zip
+cp -r templatemo_520_highway/* /var/www/html/
+sudo systemctl restart httpd
+
+fi
+```
+{: .nolineno}
+
+
+
+
 #### Shell
 
 ```bash
@@ -73,3 +123,5 @@ echo "#####################"
 rm -rf $TEMPDIR
 ```
 {: .nolineno}
+
+
