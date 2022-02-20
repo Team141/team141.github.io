@@ -13,10 +13,63 @@ pin: false
 
 ## Code block
 
-### Specific Languages
+---
 
-### Today's Assignment:
-	Single BASH script for Webserver launch in CENTOS and UBUNTU
+### Today's Assignment
+
+>Single *BASH Script* for Webserver launch in **CENTOS** and **UBUNTU**
+
+### Type-2
+```bash
+#!/bin/bash
+
+# Variable Declaration
+echo
+webtemplate=https://templatemo.com/tm-zip-files-2020/templatemo_520_highway.zip
+webpage=templatemo_520_highway
+
+# Condition to test whether it is Centos or Ubuntu
+echo
+sudo apt --help
+
+if [ $? -eq 0 ]
+then
+	echo "############### UBUNTU MACHINE ################"
+	pkgmanage=apt
+	pkgname=apache2
+else
+	echo "############### CENTOS MACHINE ################"
+	pkgmanage=yum
+	pkgname=httpd
+fi
+
+# Package installation and starting webhost service
+echo
+sudo $pkgmanage update -y > /dev/null
+sudo $pkgmanage install $pkgname wget unzip figlet -y > /dev/null
+sudo systemctl start $pkgname
+sudo systemctl enable $pkgname
+sudo ss -tunlp | grep $pkgname
+sudo mkdir -p /tmp/webfile
+     cd /tmp/webfile
+sudo wget $webtemplate
+sudo rm -rf $webpage.zip.*
+sudo unzip -oq $webpage.zip
+sudo cp -r $webpage/* /var/www/html/ > /dev/null
+sudo systemctl restart $pkgname
+sudo ss -tunlp | grep $pkgname
+
+# Acknowledging installation
+echo
+echo "###############################"
+figlet Done
+echo "###############################"
+```
+{: .nolineno}
+
+---
+
+### Type-1
 
 ```bash
 #!/bin/bash
@@ -62,10 +115,9 @@ fi
 ```
 {: .nolineno}
 
+---
 
-
-
-#### Shell
+#### Shell Example
 
 ```bash
 #!/bin/bash
@@ -75,7 +127,7 @@ fi
 # Variable declaration
 PACKAGE="apache2 wget unzip"
 SVC=apache2
-ARTURL='https://www.tooplate.com/zip-templates/2127_little_fashion.zip&#39;
+ARTURL='https://www.tooplate.com/zip-templates/2127_little_fashion.zip'
 ARTDIR=2127_little_fashion
 TEMPDIR='/tmp/webtempfiles'
 
