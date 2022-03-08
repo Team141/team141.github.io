@@ -14,13 +14,11 @@ pin: false
 
 ### Today's Assignment
 
->**Docker File** for building a *Docker Container* for  **Apache2**
 
- `Inline Code`.
+**Docker File** for building a *Docker Container* for  **Apache2**
+ 
 
 ### Dockerfile
-
- Copy of below code into file named called `Dockerfile` ('D' must be capital).
 
 
 ```
