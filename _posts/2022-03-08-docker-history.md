@@ -16,8 +16,14 @@ pin: false
 
 >**Docker File** for building a *Docker Container* for  **Apache2**
 
-### Docker File
-```DockerFile
+ `Inline Code`.
+
+### Dockerfile
+
+ Copy of below code into file named called `Dockerfile` ('D' must be capital).
+
+
+```
 FROM ubuntu:18.04
 LABEL "Project"="LilFasion"
 ENV DEBIAN_FRONTEND=noninteractive
@@ -34,10 +40,15 @@ EXPOSE 80
 ```
 {: .nolineno}
 
+
+> **Note**: Copy of above code into file named called `Dockerfile` ('D' must be capital).
+{: .prompt-info }
+
 ---
 #### Download following file 
 
-[lilfasion.tar.gz](./lilfasion.tar.gz)
+[lilfasion.tar.gz](./_data/lilfasion.tar.gz)
+
 
 
 > **Note**: Please place `Dockerfile` and `Archive file` in one folder and build Docker container from same parent folder
@@ -47,7 +58,7 @@ EXPOSE 80
 
 ### History to build container from Docker File
 
-```shell
+```console
   # system update
   
   sudo apt-get update
