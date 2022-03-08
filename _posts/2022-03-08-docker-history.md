@@ -12,10 +12,7 @@ pin: false
 ---
 
 
-### Today's Assignment
-
-
-**Docker File** for building a *Docker Container* for  **Apache2**
+### Building an **Apache2 Docker** container from **Docker File**
  
 
 ### Dockerfile
