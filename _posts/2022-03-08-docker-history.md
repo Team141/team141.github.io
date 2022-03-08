@@ -47,7 +47,7 @@ EXPOSE 80
 ---
 #### Download following file 
 
-[lilfasion.tar.gz](./_data/lilfasion.tar.gz)
+[lilfasion.tar.gz](https://github.com/Team141/team141.github.io/blob/main/_data/lilfasion.tar.gz)
 
 
 
