@@ -15,17 +15,16 @@ This post is to show a sample of scheduling **"Daily Routine and Study Timetable
 
 # Daily Routine & Study TimeTable
 ---
+## Time Table
+
+![Study Timetable](Timetable.png){: .shadow width="2664" height="494" }
+_Study Timetable_
+
+<br>
 
 ## Daily Routine
 
 ![Daily Routine](DailyPlanner.png){: width="980" height="1458" }
 _Daily Routine_
-
-<br>
-
-## Time Table
-
-![Study Timetable](Timetable.png){: .shadow width="2664" height="494" style="max-width: 90%" }
-_Study Timetable_
 
 <br>
