@@ -7,7 +7,7 @@ date: 2022-04-27 20:00:00 +0530
 categories: [Interview, Schedule]
 tags: [Timetable, Daily Routine]
 toc: false
-img_path: /
+img_path: post/img/
 ---
 
 This post is to show a sample of scheduling **"Daily Routine and Study Timetable"** for cracking DevOps Interview.
