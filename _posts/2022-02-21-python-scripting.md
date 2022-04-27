@@ -1,5 +1,5 @@
 ---
-title: Bash Scripting
+title: Python Scripting
 author:
   name: Team141
   link: https://github.com/Team141
@@ -39,7 +39,7 @@ print("#######")
 ```
 
     Python indentations
-    
+
     #######
 
 
@@ -54,9 +54,9 @@ print("$$$$$$$$$$$$$$")
 
 
 ```python
-"""This 
-is a 
-multi line 
+"""This
+is a
+multi line
 comment"""
 print("&&&&&&&&&&")
 ```
@@ -139,8 +139,8 @@ c = """theta"""
 print("a for",a,"\nb for",b,"\nc for",c)
 ```
 
-    a for alpha 
-    b for beta 
+    a for alpha
+    b for beta
     c for theta
 
 
@@ -168,7 +168,7 @@ print(x,y)
 
 
 ```python
-#List, collection of multi datatypes, enclosed in []. This 
+#List, collection of multi datatypes, enclosed in []. This
 # datatypes can be changeable(MUTABLE)
 
 list1 = [a, b, c, "Devops", 89, 90.245]
@@ -182,7 +182,7 @@ print(list1)
 
 
 ```python
-#Tuple, collection of multi datatypes, enclosed in {}. This 
+#Tuple, collection of multi datatypes, enclosed in {}. This
 # datatypes can be changeable(IMMUTABLE)
 
 tuple1 = {a, b, c, "Devops", 89, 90.245}
@@ -238,7 +238,7 @@ print(message[-1+1])
 print(message[6:10])
 ```
 
-    new 
+    new
 
 
 
