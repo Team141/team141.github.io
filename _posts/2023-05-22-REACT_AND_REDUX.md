@@ -1,11 +1,11 @@
 ---
-title: Bash Scripting
+title: React + Redux 
 author:
   name: Team141
   link: https://github.com/Team141
 date: 2023-05-22 16:30:00 +0530
 categories: [React, Redux]
-tags: [React & Redux]
+tags: [React, Redux]
 math: true
 mermaid: true
 pin: false
@@ -126,7 +126,7 @@ ReactDOM.render(<AddWrapper/>, document.getElementById('root'))
 
 ### Required Imports for React Application
 
-```bash
+```javascript
 /*
 import React from 'react'
 import ReactDOM from 'react-dom'
